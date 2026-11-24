@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#100b18">
+  <title>A Little Universe For You ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="flowers.css">
+  <link rel="icon" href="data:,">
+</head>
+<body>
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+
+  <main>
+    <section class="screen intro-screen" id="intro">
+      <div class="intro-top"><span class="tiny-star">✦</span> A SECRET LITTLE UNIVERSE <span class="tiny-star">✦</span></div>
+      <div class="terminal-wrap">
+        <div class="terminal-bar"><span></span><span></span><span></span><small>the_fav'_maverick_coder</small></div>
+        <div class="terminal" aria-live="polite">
+          <p class="terminal-label">TRANSMISSION RECEIVED</p>
+          <div id="scrambleText" class="scramble">A message is waiting for you...</div>
+          <p class="terminal-sub">[ a tiny surprise, carrying lots of love and warm wishes/ just a little reminder of how special you are to me/ i hope this little surprise makes you smile, moni ♡]</p>
+        </div>
+      </div>
+      <div class="intro-flower">✿</div>
+     <button class="primary-btn" id="openBtn" disabled>
+  UNLOCK YOUR SURPRISE <span>↗</span>
+</button>
+      <p class="tap-note">best experienced with sound on ♡</p>
+      <div class="scroll-hint">SCROLL LESS · FEEL MORE <span>↓</span></div>
+    </section>
+
+    <section class="screen story-screen hidden" id="story">
+      <div class="eyebrow">A NOTE FOR MY FAV'💙 </div>
+     <h1 class="headline">There's something special about you<br><em>that makes you unforgettable.</em>💝</h1>
+      <p class="story-copy">
+<center>Happy Birthday to you, Moni! ❤️🎂🌸</center>
+Some people leave a beautiful impression without even knowing it. You're one of those people.
+
+I just want you to know that you're one of my favourite people, and I like you so much. You are truly special to me, and I'm really happy to have met someone like you.
+
+Today is all about you, and I genuinely hope you have a beautiful and memorable day. May your life always be filled with happiness, smiles, love and wonderful moments.
+
+I always wish the very best for you. I hope you achieve everything you dream of and find happiness in every little thing you do.
+
+I hope you always stay happy, healthy and confident. May every year bring you more reasons to smile.
+
+I'll always wish and pray for your happiness and success.
+
+<center>Once again, Happy Birthday, Moni! ❤️
+
+You're my favourite. Lots of love and warm wishes! ♡.</center>
+</p>
+      <div class="name-reveal" id="nameReveal">HAPPY BIRTHDAY,MONIII</div>
+       <div class="name-reveal" id="nameReveal">A LITTLE GARDEN FOR MY FAV'💙
+MAY YOUR LIFE BLOOM AS BEAUTIFULLY AS THESE FLOWERS ♡ </div>
+ 
+
+<div class="flower-stage" id="flowerStage">
+
+  <div class="flower-glow"></div>
+
+  <img
+    src="images/all-flowers.png"
+    alt="Beautiful colourful birthday flower garden"
+    class="real-flower-image"
+    id="realFlowerImage"
+  >
+
+</div>
+
+</div>
+
+
+      <button class="text-btn" id="memoriesBtn">THERE'S MORE ↓</button>
+    </section>
+
+    <section class="screen memories-screen hidden" id="memories">
+      <div class="eyebrow">LITTLE MOMENTS, BIG SMILES</div>
+      <h2 class="section-title">A few frames of <em>you.</em></h2>
+      <p class="section-copy">some memories deserve their own little spotlight.</p>
+     
+<div class="photo-grid" id="photoGrid">
+
+  <figure class="photo-card card-one">
+    <div class="photo-frame">
+      <img src="images/photo1.jpeg" alt="Birthday memory one" loading="lazy">
+      <span class="photo-number">MEMORY 01</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">01 / A LITTLE MAGIC</span>
+     A beautiful soul ♡
+    </figcaption>
+  </figure>
+
+  <figure class="photo-card card-two">
+    <div class="photo-frame">
+      <img src="images/photo2.jpeg" alt="Birthday memory two" loading="lazy">
+      <span class="photo-number">MEMORY 02</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">02 / YOUR SMILE</span>
+      lovely smile
+    </figcaption>
+  </figure>
+
+  <figure class="photo-card card-three">
+    <div class="photo-frame">
+      <img src="images/photo3.jpeg" alt="Birthday memory three" loading="lazy">
+      <span class="photo-number">MEMORY 03</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">03 / PURE HAPPINESS</span>
+       A heart full of sunshine
+    </figcaption>
+  </figure>
+
+  <figure class="photo-card card-four">
+    <div class="photo-frame">
+      <img src="images/photo4.jpeg" alt="Birthday memory four" loading="lazy">
+      <span class="photo-number">MEMORY 04</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">04 / ALWAYS SPECIAL</span>
+      Forever a favourite
+    </figcaption>
+  </figure>
+
+  <figure class="photo-card card-five">
+    <div class="photo-frame">
+      <img src="images/photo5.jpeg" alt="Birthday memory five" loading="lazy">
+      <span class="photo-number">MEMORY 05</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">05 / LITTLE THINGS</span>
+      little moments, forever
+    </figcaption>
+  </figure>
+
+  <figure class="photo-card card-six">
+    <div class="photo-frame">
+      <img src="images/photo6.jpeg" alt="Birthday memory six" loading="lazy">
+      <span class="photo-number">MEMORY 06</span>
+      <span class="photo-overlay">♡</span>
+    </div>
+    <figcaption>
+      <span class="caption-number">06 / ALWAYS SPECIAL</span>
+      irreplaceable ♡
+    </figcaption>
+  </figure>
+
+</div>
+
+      <div class="gallery-footnote">A small gallery for a very special person <span>♡</span></div>
+    </section>
+    <section class="screen finale-screen hidden" id="finale">
+      <div class="finale-stars">✦　✧　✦　✧　✦</div>
+      <div class="finale-flower">❀</div>
+      <p class="eyebrow">TODAY, AND EVERY DAY AFTER</p>
+      <h2 class="finale-title">Wishing you endless smiles and beautiful moments, always.,<br><em>my favourite</em></h2>
+      <p class="finale-message">I hope your days are always filled with happiness, beautiful smiles, lovely memories</p>
+
+  <div class="signature">
+"Always wishing you happiness and praying for all the best in your life."
+</div>
+      <div class="signature"><span>♡</span> With lots of love <span>♡</span></div>
+
+      <button class="replay-btn" id="replayBtn">↻ EXPERIENCE AGAIN</button>
+    </section>
+  </main>
+  <audio id="birthdayAudio" preload="auto" loop playsinline></audio>
+  <footer>MADE WITH ♡, JUST FOR YOU</footer>
+  <script src="script.js"></script>
+</body>
+</html>

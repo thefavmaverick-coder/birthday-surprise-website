@@ -1,0 +1,191 @@
+
+/* ============================================
+   THE FAV' MAVERICK
+   REALISTIC COLOURFUL BIRTHDAY FLOWER GARDEN
+============================================ */
+
+/* ---------- FLOWER CONTAINER ---------- */
+
+.flower-stage {
+  position: relative;
+
+  width: min(900px, 95vw);
+  margin: 20px auto 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: visible;
+  background: transparent;
+}
+
+/* ---------- PURPLE BACKGROUND GLOW ---------- */
+
+.flower-glow {
+  position: absolute;
+
+  width: 70%;
+  height: 45%;
+
+  bottom: 5%;
+  left: 15%;
+
+  background: radial-gradient(
+    ellipse,
+    #a84cdb 0%,
+    #71349d 35%,
+    transparent 75%
+  );
+
+  filter: blur(75px);
+  opacity: .2;
+
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---------- REAL FLOWER IMAGE ---------- */
+
+.real-flower-image {
+  display: block;
+
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+
+  opacity: 0;
+
+  transform: translateY(45px) scale(.88);
+
+  filter:
+    drop-shadow(0 0 12px #b86be622)
+    drop-shadow(0 0 25px #a64bd522);
+
+  transition:
+    opacity 2s ease,
+    transform 3s cubic-bezier(.2, .8, .2, 1),
+    filter 2s ease;
+
+  /*
+    Screen blending helps dark image backgrounds
+    blend with the dark website background.
+    If flower colours look washed out, use normal.
+  */
+
+ mix-blend-mode: normal;
+}
+
+/* ---------- FLOWER IMAGE REVEAL ---------- */
+
+.flower-stage.bloom-active .real-flower-image {
+  opacity: 1;
+
+  transform: translateY(0) scale(1);
+
+  filter:
+    drop-shadow(0 0 18px #c47be944)
+    drop-shadow(0 0 35px #a84cdb22);
+
+  animation: flowerGardenSway 7s ease-in-out 2s infinite alternate;
+}
+
+/* ---------- GLOW ANIMATION ---------- */
+
+.flower-stage.bloom-active .flower-glow {
+  animation: flowerGardenGlow 4s ease-in-out infinite alternate;
+}
+
+@keyframes flowerGardenGlow {
+
+  0% {
+    opacity: .12;
+    transform: scale(.8);
+  }
+
+  100% {
+    opacity: .38;
+    transform: scale(1.15);
+  }
+
+}
+
+/* ---------- GENTLE FLOWER MOVEMENT ---------- */
+
+@keyframes flowerGardenSway {
+
+  0% {
+    transform: translateY(0) scale(1) rotate(-.3deg);
+  }
+
+  50% {
+    transform: translateY(-4px) scale(1.008) rotate(.2deg);
+  }
+
+  100% {
+    transform: translateY(-7px) scale(1.015) rotate(.4deg);
+  }
+
+}
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+@media (max-width: 700px) {
+
+  .flower-stage {
+    width: 100%;
+    margin: 15px auto;
+  }
+
+  .real-flower-image {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .flower-stage {
+    width: 100%;
+  }
+
+  .real-flower-image {
+    width: 105%;
+    max-width: none;
+  }
+
+}
+
+/* ---------- SMALL MOBILE SCREENS ---------- */
+
+@media (max-width: 380px) {
+
+  .flower-stage {
+    margin: 10px auto;
+  }
+
+  .real-flower-image {
+    width: 110%;
+    max-width: none;
+  }
+
+}
+
+/* ---------- ACCESSIBILITY ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .real-flower-image,
+  .flower-glow {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}
+
+/* ============================================
+   END OF FLOWER GARDEN CSS
+============================================ */

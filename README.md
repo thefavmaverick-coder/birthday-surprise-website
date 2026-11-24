@@ -1,49 +1,111 @@
-# 🎂 Birthday Surprise Website
+# 🎂 A Little Surprise for Moni ❤️
 
-**Create a beautiful, personalised birthday surprise for someone special!**
+<p align="center">
+  <strong>A small birthday surprise, created with lots of love and care.</strong>
+</p>
 
-A creative and animated birthday website template designed to help anyone express their wishes in a unique and memorable way.
+<p align="center">
+  A personalized birthday website designed to make someone's special day even more memorable. 🌸
+</p>
 
-This project allows you to customise the birthday person's name, photos, background music, flowers and birthday messages. You can create your own version and share it with someone special through a website link or QR code.
+---
+
+## 💝 About the Project
+
+**A Little Surprise for Moni** is a personalized birthday website created to celebrate a special person's birthday in a unique and memorable way.
+
+Instead of sending an ordinary birthday message, I wanted to create something more personal — a little digital surprise filled with warm wishes, beautiful flowers, special photographs, animations and background music.
+
+The website takes the visitor through a small birthday experience, beginning with a surprise introduction and ending with a heartfelt birthday message.
+
+Every section is designed to make the experience feel special, simple and meaningful.
+
+---
 
 ## ✨ Features
 
-- 🎉 Personalised birthday welcome screen
-- 💌 Custom birthday wishes and messages
-- 🌸 Animated flower and petal effects
-- 📸 Personal photo gallery
-- 🎵 Background birthday music
-- 💜 Beautiful dark-purple themed design
-- ✨ Smooth animations and transitions
-- 📱 Responsive design for mobile and desktop
-- 🌐 Easy deployment using Vercel or other static website hosting platforms
+### 🎁 1. Surprise Introduction
+- Interactive welcome screen.
+- Animated introduction.
+- A special button to unlock the birthday surprise.
+- Personalized welcome message.
+
+### 💌 2. Personal Birthday Message
+- Heartfelt birthday wishes.
+- Personalized message for Moni.
+- Simple and meaningful words.
+- Elegant typography and presentation.
+
+### 🌸 3. Animated Flower Garden
+- Beautiful flower illustration.
+- Bloom-style reveal animation.
+- Soft glowing visual effects.
+- Decorative flower presentation.
+
+### 📸 4. Memory Gallery
+- Personalized photo gallery.
+- Six photo cards.
+- Individual captions for each photograph.
+- Responsive gallery layout.
+- Image hover effects and styling.
+
+### 🎶 5. Background Music
+- Background birthday music.
+- Music playback support.
+- User-interaction-based playback to respect browser autoplay restrictions.
+
+### ❤️ 6. Final Birthday Wishes
+- A dedicated final birthday message.
+- Personalized closing wishes.
+- Beautiful ending experience.
+
+### 📱 7. Responsive Design
+- Desktop-friendly layout.
+- Mobile-friendly presentation.
+- Responsive image gallery.
+- Designed for a smooth experience across screen sizes.
+
+### 🎀 8. Secret QR Code Experience
+- A personalized QR code linked to the live website.
+- A character-themed birthday surprise card.
+- Scan-to-open birthday experience.
+
+---
 
 ## 🛠️ Technologies Used
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
-- Vercel (deployment)
+| Technology | Purpose |
+|---|---|
+| HTML5 | Website structure |
+| CSS3 | Styling and layouts |
+| JavaScript | Interactions and animations |
+| Google Fonts | Typography |
+| Git | Version control |
+| GitHub | Source code management |
+| Vercel | Website hosting and deployment |
+| QR Code | Accessing the birthday surprise |
+
+---
 
 ## 📂 Project Structure
 
 ```text
-birthday-surprise-website/
+a-little-surprise-for-moni/
 │
 ├── index.html
+│
 ├── style.css
 ├── flowers.css
 ├── script.js
 │
 ├── images/
-│   ├── flowers.png
-│   ├── photo1.jpeg
-│   ├── photo2.jpeg
-│   ├── photo3.jpeg
-│   ├── photo4.jpeg
-│   ├── photo5.jpeg
-│   └── photo6.jpeg
+│   ├── all-flowers.png
+│   ├── photo1.jpg
+│   ├── photo2.png
+│   ├── photo3.jpg
+│   ├── photo4.png
+│   ├── photo5.png
+│   └── photo6.jpg
 │
 ├── music/
 │   └── birthday-song.mp3
@@ -51,192 +113,124 @@ birthday-surprise-website/
 └── README.md
 ```
 
-*Your actual folder and filenames may differ. Keep the file paths in your code consistent with your project.*
+*Note: The structure above represents the main project files. Update filenames if your actual project uses different names.*
 
-## 🚀 How to Use This Project
+---
 
-You don't need to build the entire website from scratch. Follow these steps to create your own birthday website.
+## 🎨 Design & User Experience
 
-### Step 1: Download or Clone the Repository
+The website uses a soft, elegant and dreamy visual style.
 
-Clone this project:
+**Design elements:**
+- Dark purple background.
+- Pink and purple accent colours.
+- Elegant typography.
+- Animated decorative elements.
+- Flower-inspired visuals.
+- Smooth section transitions.
+- Interactive buttons.
+- Personalized photo cards.
+
+**Typography:**
+- Cormorant Garamond
+- DM Sans
+
+The design focuses on creating a warm birthday atmosphere while keeping the interface simple and easy to navigate.
+
+---
+
+## ⚙️ Run the Project Locally
+
+Follow these steps to run the website on your computer.
+
+### 1. Clone the Repository
 
 ```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
+https://github.com/thefavmaverick-coder/a-little-surprise-for-moni.git
 ```
 
-Or download the repository as a ZIP file and extract it.
+### 2. Open the Project Folder
 
-### Step 2: Open the Project
-
-Open the extracted project folder in Visual Studio Code.
-
-### Step 3: Customise the Birthday Person's Name
-
-Open `script.js` and find the configuration section.
-
-Change the birthday person's name:
-
-```javascript
-const CONFIG = {
-  birthdayName: "YOUR_PERSON_NAME",
-
-  photos: [
-    "images/photo1.jpeg",
-    "images/photo2.jpeg",
-    "images/photo3.jpeg",
-    "images/photo4.jpeg",
-    "images/photo5.jpeg",
-    "images/photo6.jpeg"
-  ],
-
-  songFile: "music/birthday-song.mp3",
-
-  flowerImage: "images/flowers.png"
-};
+```bash
+cd a-little-surprise-for-moni
 ```
 
-Replace `YOUR_PERSON_NAME` with the name of the person celebrating their birthday.
+### 3. Open in Visual Studio Code
 
-### Step 4: Add Your Own Photos
-
-1. Open the `images` folder.
-2. Remove the example photos.
-3. Add your own photographs.
-4. Update the photo filenames in the configuration section if necessary.
-
-Example:
-
-```javascript
-photos: [
-  "images/memory1.jpg",
-  "images/memory2.jpg",
-  "images/memory3.jpg"
-]
-```
-```intex.html
-photos: [
-  "images/memory1.jpg",
-  "images/memory2.jpg",
-  "images/memory3.jpg"
-]
+```bash
+code .
 ```
 
+### 4. Run the Website
 
-Make sure the filenames and image paths match.
+Open `index.html` using the VS Code Live Server extension.
 
-### Step 5: Add Your Own Background Music
+Alternatively, open `index.html` directly in your browser.
 
-1. Open the `music` folder.
-2. Add your preferred birthday song or music file.
-3. Update the `songFile` value.
+---
 
-Example:
+## 🚀 Deployment
 
-```javascript
-songFile: "music/my-birthday-song.mp3"
-```
+The website is deployed using **Vercel**.
 
-**Note:** Browsers may block autoplay with sound until the visitor interacts with the page. The visitor may need to tap the page or unlock button to start the music.
+### Deployment Steps
 
-Only use music that you have permission to share.
+1. Push the project to GitHub.
+2. Sign in to Vercel using GitHub.
+3. Import the birthday website repository.
+4. Select the appropriate project settings.
+5. Deploy the project.
+6. Access the generated live website URL.
 
-### Step 6: Customise the Flowers
+**Live Website:** [Add Your Vercel Website URL Here]
 
-Replace the flower image in the `images` folder with your preferred flower artwork.
+**GitHub Repository:** [[Add Your GitHub Repository URL Here](https://github.com/thefavmaverick-coder/a-little-surprise-for-moni.git)]
 
-Update the configuration:
+---
 
-```javascript
-flowerImage: "images/my-flowers.png"
-```
+## 🔐 Privacy & Image Protection
 
-Keep the image format and path consistent with your code.
+The GitHub repository can be kept private to restrict public access to the original source files.
 
-### Step 7: Add Your Birthday Wishes
+Additional measures include:
+- Disabling casual image dragging.
+- Disabling the image right-click context menu.
+- Keeping original photographs backed up privately.
 
-Open `index.html` and `script.js`.
+**Privacy note:** Images displayed on a public website may still be saved or captured by visitors through other methods. These measures discourage casual downloading but cannot guarantee complete image protection.
 
-Find the existing birthday message content and replace it with your own wishes.
+---
 
-You can write:
-- A personal birthday greeting
-- Special memories
-- Heartfelt messages
-- Birthday wishes
-- A final surprise message
+## 💡 What I Learned
 
-Make sure you update every place where the original example name or message appears.
+Through this project, I explored and worked with:
 
-### Step 8: Preview Your Website
+- Building a complete website using HTML, CSS and JavaScript.
+- Creating interactive website sections.
+- Applying CSS animations and visual effects.
+- Working with images and background music.
+- Organizing project files and assets.
+- Using Git and GitHub for version control.
+- Deploying a website through Vercel.
+- Creating a QR-code-based website access experience.
+- Considering responsive design and user experience.
 
-You can open `index.html` in your browser or use the Live Server extension in Visual Studio Code.
+---
 
-Check that:
-- The birthday name is correct.
-- Your photos are displayed.
-- The music works after user interaction.
-- The flowers and animations work.
-- All birthday messages are updated.
-- The website works on mobile and desktop.
+## ❤️ A Little Note
 
-## 🌐 Deploy Your Birthday Website
+This project is more than just a website. It's a small collection of birthday wishes, photographs, flowers and memories, created to bring a smile to someone's face.
 
-You can publish your personalised website online using Vercel.
+Sometimes, a simple idea can become a beautiful little surprise.
 
-1. Create a GitHub repository for your customised version.
-2. Push your project files to GitHub.
-3. Visit [Vercel](https://vercel.com/).
-4. Sign in using your GitHub account.
-5. Import your birthday website repository.
-6. Deploy the project.
-7. Copy your live website URL.
+**Happy Birthday, Moni! ❤️🌸**
 
-Now you can share your birthday website with someone special!
+---
 
-## 📱 Share Your Surprise Using a QR Code
+<p align="center">
+  Made with ❤️, care and a little creativity.
+</p>
 
-Once your website is deployed:
-
-1. Copy your live website URL.
-2. Generate a QR code using that URL.
-3. Add the QR code to a birthday card.
-4. Let the birthday person scan it using their phone camera.
-
-They can also open the website URL directly on a laptop for a bigger experience.
-
-## 🎨 Customisation Ideas
-
-You can make every birthday website unique by changing:
-
-- Birthday person's name
-- Birthday messages
-- Photos and memories
-- Background music
-- Flower artwork
-- Colours and themes
-- Fonts and animations
-- Website title
-
-## 💡 Important Notes
-
-- This is a reusable website template. Create a separate copy for each birthday celebration.
-- Replace all sample names, messages, images and music before sharing your version.
-- Do not upload private photographs or personal information without permission.
-- Large image and audio files can increase loading time.
-- Check the website on both mobile and desktop before sharing.
-- Make sure you have permission to use any music, images or other assets you include.
-
-## ❤️ Purpose of This Project
-
-A birthday wish doesn't always have to be a simple message or greeting card.
-
-This project makes it possible to create a small digital experience filled with photographs, music, flowers, memories and heartfelt wishes.
-
-**Create something personal. Share a little happiness. Make someone's birthday memorable!** 🎂🌸
-
-## ⭐ Support
-
-If you find this project useful, consider giving the repository a star ⭐ and sharing it with someone who would love to create a personalised birthday surprise.
-
-Happy Creating! 💜
+<p align="center">
+  <strong>© 2026 | A Little Surprise for Moni</strong>
+</p>
